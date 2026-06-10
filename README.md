@@ -8,15 +8,9 @@ A web-based tool to parse Amion HTML exports and generate trainee moonlighting s
 
 ### Step 1: Download HTML files from Amion
 
-You need to download two HTML files from Amion:
+Download two HTML files from Amion: the **Residency Schedule** and **Contrast Coverage Schedule**.
 
-#### Residency Schedule HTML
-
-![Download Residency Schedule](screenshots/residency_download.png)
-
-#### Contrast Coverage Schedule HTML
-
-![Download Contrast Coverage](screenshots/contrast_download.png)
+![How to download HTML from Amion](screenshot_for_github.png)
 
 ### Step 2: Upload files to the parser
 
@@ -50,3 +44,7 @@ Jane Doe
 ## Privacy
 
 All processing happens locally in your browser. No files are uploaded to any server.
+
+## Acknowledgments
+
+Thanks to Ryan Cummings for the original idea and the screenshot.
