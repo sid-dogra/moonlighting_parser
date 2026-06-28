@@ -1,0 +1,271 @@
+September Moonlighting Summary
+==================================================
+
+Anna Chen
+  09-05-2025 53rd St weekday           4
+  Total:                           4
+
+Anthony Chong
+  09-05-2025 Gramercy weekday          4
+  09-15-2025 41st St                   2
+  09-30-2025 Bay Ridge                 4
+  Total:                           10
+
+Ariella Noorily
+  09-02-2025 CBI                       4
+  09-06-2025 Gramercy weekend          8
+  Total:                           12
+
+Arthur Shou
+  09-01-2025 ECEP                      5
+  09-04-2025 ECEP                      6
+  09-05-2025 CBI                       4
+  09-07-2025 ECEP                      5
+  09-08-2025 Gramercy weekday          4
+  09-10-2025 Cancer Center weekday     3
+  09-11-2025 53rd St weekday           4
+  09-13-2025 ECEP                      5
+  09-14-2025 Garden City               8
+  09-15-2025 Bay Ridge                 4
+  09-17-2025 Cancer Center weekday     3
+  09-19-2025 53rd St weekday           4
+  09-22-2025 Gramercy weekday          4
+  09-24-2025 Bay Ridge                 4
+  09-26-2025 CBI                       4
+  Total:                           67
+
+Belinda Asare
+  09-12-2025 Bay Ridge                 4
+  09-13-2025 Bay Ridge                 8
+  09-26-2025 Cancer Center weekday     3
+  Total:                           15
+
+Boniface Yarabe
+  09-02-2025 Gramercy weekday          4
+  09-03-2025 ECEP                      6
+  09-04-2025 CBI                       4
+  09-06-2025 Bay Ridge                 8
+  09-08-2025 CBI                       4
+  09-09-2025 Gramercy weekday          4
+  09-11-2025 Cancer Center weekday     3
+  09-13-2025 53rd St weekend           8
+  Total:                           41
+
+Daniel Freedman
+  09-02-2025 ECEP                      6
+  09-09-2025 Cancer Center weekday     3
+  09-27-2025 Gramercy weekend          8
+  09-29-2025 CBI                       4
+  09-30-2025 53rd St weekday           4
+  Total:                           25
+
+Danielle Rigau
+  09-03-2025 CBI                       4
+  09-10-2025 ECEP                      6
+  09-12-2025 ECEP                      6
+  09-14-2025 ECEP                      5
+  09-18-2025 41st St                   2
+  09-19-2025 CBI                       4
+  09-20-2025 Bay Ridge                 8
+  09-21-2025 ECEP                      5
+  09-22-2025 41st St                   2
+  09-29-2025 41st St                   2
+  Total:                           44
+
+David Ola
+  09-06-2025 ECEP                      5
+  09-11-2025 ECEP                      6
+  09-12-2025 53rd St weekday           4
+  Total:                           15
+
+Emmy Hu
+  09-04-2025 53rd St weekday           4
+  09-10-2025 41st St                   2
+  09-15-2025 ECEP                      6
+  09-17-2025 41st St                   2
+  09-19-2025 Cancer Center weekday     3
+  09-23-2025 41st St                   2
+  09-25-2025 ECEP                      6
+  09-26-2025 41st St                   2
+  09-27-2025 53rd St weekend           8
+  09-28-2025 ECEP                      5
+  09-29-2025 ECEP                      6
+  09-30-2025 41st St                   2
+  Total:                           48
+
+Fred Kwon
+  09-05-2025 Cancer Center weekday     3
+  09-06-2025 53rd St weekend           8
+  09-08-2025 41st St                   2
+  09-13-2025 Gramercy weekend          8
+  09-15-2025 Gramercy weekday          4
+  09-17-2025 53rd St weekday           4
+  09-19-2025 Bay Ridge                 4
+  09-20-2025 Gramercy weekend          8
+  09-22-2025 Cancer Center weekday     3
+  09-23-2025 Gramercy weekday          4
+  09-24-2025 53rd St weekday           4
+  09-25-2025 Gramercy weekday          4
+  09-26-2025 ECEP                      6
+  09-29-2025 Bay Ridge                 4
+  Total:                           66
+
+Helaina Regen-Tuero
+  09-10-2025 53rd St weekday           4
+  09-11-2025 Gramercy weekday          4
+  09-17-2025 CBI                       4
+  Total:                           12
+
+Jason Wei
+  09-03-2025 Bay Ridge                 4
+  09-05-2025 ECEP                      6
+  09-19-2025 ECEP                      6
+  09-27-2025 ECEP                      5
+  Total:                           21
+
+Jordan Kondo
+  09-22-2025 ECEP                      6
+  Total:                           6
+
+Keith Ameyaw
+  09-03-2025 Cancer Center weekday     3
+  09-05-2025 Bay Ridge                 4
+  Total:                           7
+
+Lillian Chiu
+  09-09-2025 Bay Ridge                 4
+  09-16-2025 Bay Ridge                 4
+  09-22-2025 Bay Ridge                 4
+  09-27-2025 Bay Ridge                 8
+  Total:                           20
+
+Marcus Daniels
+  09-10-2025 Gramercy weekday          4
+  09-16-2025 53rd St weekday           4
+  Total:                           8
+
+Michelle Lee
+  09-02-2025 53rd St weekday           4
+  09-03-2025 53rd St weekday           4
+  09-18-2025 ECEP                      6
+  09-22-2025 CBI                       4
+  09-23-2025 53rd St weekday           4
+  09-30-2025 CBI                       4
+  Total:                           26
+
+Mira Yousef
+  09-03-2025 41st St                   2
+  09-12-2025 Gramercy weekday          4
+  09-13-2025 Forest Hills              8
+  09-18-2025 53rd St weekday           4
+  09-23-2025 Bay Ridge                 4
+  09-24-2025 41st St                   2
+  09-25-2025 53rd St weekday           4
+  09-27-2025 Lake Success              8
+  Total:                           36
+
+Monica Vergara
+  09-11-2025 CBI                       4
+  Total:                           4
+
+Motaz Nashawaty
+  09-08-2025 Bay Ridge                 4
+  09-11-2025 Bay Ridge                 4
+  09-13-2025 Lake Success              8
+  09-15-2025 Cancer Center weekday     3
+  09-16-2025 Cancer Center weekday     3
+  09-17-2025 Bay Ridge                 4
+  09-18-2025 Gramercy weekday          4
+  09-20-2025 ECEP                      5
+  09-20-2025 53rd St weekend           8
+  09-23-2025 ECEP                      6
+  09-25-2025 41st St                   2
+  09-28-2025 Garden City               8
+  Total:                           59
+
+Olivia Purcell
+  09-02-2025 41st St                   2
+  09-04-2025 Cancer Center weekday     3
+  09-06-2025 Lake Success              8
+  09-08-2025 ECEP                      6
+  09-09-2025 53rd St weekday           4
+  09-11-2025 41st St                   2
+  09-16-2025 ECEP                      6
+  09-24-2025 ECEP                      6
+  09-25-2025 CBI                       4
+  09-29-2025 Cancer Center weekday     3
+  09-30-2025 Gramercy weekday          4
+  Total:                           48
+
+Ralph Navarro
+  09-02-2025 Cancer Center weekday     3
+  09-04-2025 41st St                   2
+  09-09-2025 41st St                   2
+  09-12-2025 CBI                       4
+  09-18-2025 CBI                       4
+  09-20-2025 Lake Success              8
+  09-24-2025 Cancer Center weekday     3
+  09-25-2025 Bay Ridge                 4
+  09-26-2025 Gramercy weekday          4
+  09-29-2025 53rd St weekday           4
+  09-30-2025 ECEP                      6
+  Total:                           44
+
+Ryan Cummings
+  09-04-2025 Bay Ridge                 4
+  09-18-2025 Cancer Center weekday     3
+  09-25-2025 Cancer Center weekday     3
+  Total:                           10
+
+Sam Platt
+  09-04-2025 Gramercy weekday          4
+  09-05-2025 41st St                   2
+  09-06-2025 Forest Hills              8
+  09-09-2025 ECEP                      6
+  09-10-2025 CBI                       4
+  09-15-2025 CBI                       4
+  09-16-2025 Gramercy weekday          4
+  09-17-2025 ECEP                      6
+  09-19-2025 Gramercy weekday          4
+  09-22-2025 53rd St weekday           4
+  09-23-2025 Cancer Center weekday     3
+  09-26-2025 53rd St weekday           4
+  09-30-2025 Cancer Center weekday     3
+  Total:                           56
+
+Shailin Thomas
+  09-07-2025 Garden City               8
+  09-21-2025 Garden City               8
+  Total:                           16
+
+Shunn Theingi
+  09-03-2025 Gramercy weekday          4
+  09-08-2025 Cancer Center weekday     3
+  09-09-2025 CBI                       4
+  09-10-2025 Bay Ridge                 4
+  09-12-2025 41st St                   2
+  09-15-2025 53rd St weekday           4
+  09-16-2025 CBI                       4
+  09-17-2025 Gramercy weekday          4
+  09-23-2025 CBI                       4
+  Total:                           33
+
+Wan Fung Chui
+  09-24-2025 CBI                       4
+  Total:                           4
+
+Winston Winkler
+  09-12-2025 Cancer Center weekday     3
+  09-16-2025 41st St                   2
+  09-18-2025 Bay Ridge                 4
+  09-19-2025 41st St                   2
+  09-20-2025 Forest Hills              8
+  09-24-2025 Gramercy weekday          4
+  09-26-2025 Bay Ridge                 4
+  09-27-2025 Forest Hills              8
+  09-29-2025 Gramercy weekday          4
+  Total:                           39
+
+Yvan James
+  09-02-2025 Bay Ridge                 4
+  Total:                           4

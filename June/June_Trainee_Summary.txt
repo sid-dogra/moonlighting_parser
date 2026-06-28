@@ -1,0 +1,490 @@
+June Moonlighting Summary
+==================================================
+
+Alice Huang
+  06-11-2026 Premier                   1
+  Total:                               1
+
+Alyssa DiCosmo
+  06-02-2026 Premier                   1
+  06-03-2026 7AM CBI                   1
+  06-09-2026 7AM CBI                   1
+  06-10-2026 7AM CBI                   1
+  06-15-2026 7AM CBI                   1
+  06-17-2026 7AM CBI                   1
+  06-18-2026 7AM CBI                   1
+  06-19-2026 Premier                   1
+  06-23-2026 7AM CBI                   1
+  06-24-2026 7AM CBI                   1
+  Total:                               10
+
+Andrew Ruff
+  06-13-2026 41st St weekend           8
+  06-15-2026 41st St late              2
+  06-16-2026 41st St late              2
+  06-18-2026 41st St late              2
+  06-19-2026 41st St late              2
+  06-29-2026 Premier                   1
+  Total:                               17
+
+Anna Chen
+  06-03-2026 53rd St weekday           4
+  06-19-2026 CBI                       4
+  Total:                               8
+
+Anthony Chong
+  06-06-2026 Gramercy weekend          8
+  06-08-2026 ECEP                      6
+  06-10-2026 Gramercy weekday          4
+  06-12-2026 Cancer Center weekday     3
+  06-16-2026 Gramercy weekday          4
+  06-23-2026 ECEP                      6
+  06-25-2026 CBI                       4
+  Total:                               35
+
+Anthony Yang
+  06-05-2026 Premier                   1
+  06-17-2026 Premier                   1
+  06-22-2026 Premier                   1
+  Total:                               3
+
+Arghavan Sharifi
+  06-03-2026 Premier                   1
+  Total:                               1
+
+Arthur Shou
+  06-21-2026 53rd St weekend           8
+  06-23-2026 Gramercy weekday          4
+  Total:                               12
+
+Boniface Yarabe
+  06-25-2026 Bay Ridge                 4
+  Total:                               4
+
+Bryce Saba
+  06-05-2026 Bay Ridge                 4
+  06-08-2026 32nd Late                 4
+  06-12-2026 Bay Ridge                 4
+  06-26-2026 Bay Ridge                 4
+  Total:                               16
+
+Christopher Lew
+  06-07-2026 41st St weekend           8
+  Total:                               8
+
+Daniel Freedman
+  06-03-2026 ECEP                      6
+  06-20-2026 53rd St weekend           8
+  06-21-2026 Gramercy weekend          8
+  06-22-2026 Cancer Center weekday     3
+  06-24-2026 CBI                       4
+  Total:                               29
+
+Danielle Rigau
+  06-06-2026 53rd St weekend           8
+  06-09-2026 53rd St weekday           4
+  06-12-2026 53rd St weekday           4
+  06-13-2026 53rd St weekend           8
+  06-14-2026 ECEP                      5
+  06-18-2026 53rd St weekday           4
+  06-19-2026 53rd St weekday           4
+  06-20-2026 ECEP                      5
+  06-21-2026 41st St weekend           8
+  06-27-2026 ECEP                      5
+  06-27-2026 Forest Hills              8
+  06-28-2026 Garden City               8
+  Total:                               71
+
+David Ola
+  06-01-2026 53rd St weekday           4
+  06-02-2026 53rd St weekday           4
+  06-06-2026 ECEP                      5
+  06-11-2026 32nd Late                 4
+  06-13-2026 Lake Success              8
+  06-14-2026 Garden City               8
+  06-18-2026 CBI                       4
+  06-20-2026 Forest Hills              8
+  06-26-2026 CBI                       4
+  06-27-2026 Cancer Center weekend     7.5
+  Total:                               56.5
+
+Ehizokha Ihionkhan
+  06-06-2026 Forest Hills              8
+  06-07-2026 Garden City               8
+  06-08-2026 Bay Ridge                 4
+  06-09-2026 Bay Ridge                 4
+  06-11-2026 ECEP                      6
+  06-16-2026 53rd St weekday           4
+  06-17-2026 53rd St weekday           4
+  06-18-2026 Bay Ridge                 4
+  06-20-2026 Bay Ridge                 8
+  06-22-2026 32nd Late                 4
+  06-24-2026 53rd St weekday           4
+  06-25-2026 Gramercy weekday          4
+  06-30-2026 32nd Late                 4
+  Total:                               66
+
+Eliana Goldberg
+  06-23-2026 7AM 32nd                  1
+  Total:                               1
+
+Elizabeth Li
+  06-01-2026 32nd Late                 4
+  06-09-2026 41st St                   2
+  Total:                               6
+
+Emmy Hu
+  06-02-2026 32nd Late                 4
+  06-04-2026 41st St                   2
+  06-04-2026 41st St late              2
+  06-05-2026 41st St                   2
+  06-07-2026 Gramercy weekend          8
+  06-13-2026 Forest Hills              8
+  06-15-2026 CBI                       4
+  06-16-2026 ECEP                      6
+  06-18-2026 Cancer Center weekday     3
+  06-22-2026 ECEP                      6
+  06-26-2026 Gramercy weekday          4
+  06-27-2026 HCC weekend               8
+  06-28-2026 ECEP                      5
+  06-28-2026 32nd St weekend           8
+  Total:                               70
+
+Faizullah Mashriqi
+  06-06-2026 41st St weekend           8
+  06-08-2026 41st St late              2
+  06-09-2026 41st St late              2
+  06-10-2026 41st St late              2
+  06-11-2026 41st St late              2
+  06-12-2026 41st St late              2
+  Total:                               18
+
+Fred Kwon
+  06-02-2026 Gramercy weekday          4
+  06-05-2026 ECEP                      6
+  06-07-2026 32nd St weekend           8
+  06-09-2026 Gramercy weekday          4
+  06-10-2026 41st St                   2
+  06-12-2026 CBI                       4
+  06-15-2026 32nd Late                 4
+  06-16-2026 CBI                       4
+  06-20-2026 Gramercy weekend          8
+  06-23-2026 41st St                   2
+  06-25-2026 ECEP                      6
+  06-30-2026 CBI                       4
+  Total:                               56
+
+Gande Li
+  06-04-2026 32nd Late                 4
+  06-12-2026 Premier                   1
+  06-13-2026 HCC weekend               8
+  06-24-2026 32nd Late                 4
+  06-25-2026 Premier                   1
+  06-29-2026 32nd Late                 4
+  Total:                               22
+
+Helaina Regen-Tuero
+  06-08-2026 Cancer Center weekday     3
+  06-13-2026 Gramercy weekend          8
+  06-16-2026 Cancer Center weekday     3
+  06-25-2026 Cancer Center weekday     3
+  Total:                               17
+
+Jacy Lundberg
+  06-11-2026 7AM CBI                   1
+  06-13-2026 CBI weekend               8
+  Total:                               9
+
+James Lee
+  06-02-2026 7AM CBI                   1
+  06-06-2026 CBI weekend               8
+  06-09-2026 Premier                   1
+  Total:                               10
+
+Jeff Ord
+  06-10-2026 Bay Ridge                 4
+  06-12-2026 Gramercy weekday          4
+  Total:                               8
+
+Jesi Kim
+  06-01-2026 7AM 32nd                  1
+  06-03-2026 7AM 32nd                  1
+  06-05-2026 7AM 32nd                  1
+  06-10-2026 7AM 32nd                  1
+  06-17-2026 7AM 32nd                  1
+  06-19-2026 7AM 32nd                  1
+  06-24-2026 7AM 32nd                  1
+  06-24-2026 Premier                   1
+  Total:                               8
+
+Jordan Kondo
+  06-07-2026 53rd St weekend           8
+  06-10-2026 CBI                       4
+  06-11-2026 CBI                       4
+  06-19-2026 ECEP                      6
+  06-21-2026 ECEP                      5
+  06-21-2026 32nd St weekend           8
+  06-23-2026 CBI                       4
+  06-26-2026 ECEP                      6
+  06-28-2026 Gramercy weekend          8
+  Total:                               53
+
+Keith Ameyaw
+  06-22-2026 Bay Ridge                 4
+  06-24-2026 Cancer Center weekday     3
+  Total:                               7
+
+Kellie Patterson
+  06-22-2026 7AM CBI                   1
+  06-23-2026 Premier                   1
+  06-25-2026 7AM CBI                   1
+  06-26-2026 7AM CBI                   1
+  06-27-2026 CBI weekend               8
+  Total:                               12
+
+Kevin Adams
+  06-05-2026 32nd Late                 4
+  06-06-2026 32nd St weekend           8
+  06-22-2026 7AM 32nd                  1
+  06-26-2026 7AM 32nd                  1
+  06-26-2026 32nd Late                 4
+  06-27-2026 32nd St weekend           8
+  Total:                               26
+
+Luis Garza-Barrera
+  06-02-2026 7AM 32nd                  1
+  06-03-2026 CBI                       4
+  06-04-2026 ECEP                      6
+  06-04-2026 7AM 32nd                  1
+  06-06-2026 HCC weekend               8
+  06-09-2026 7AM 32nd                  1
+  06-11-2026 53rd St weekday           4
+  06-12-2026 7AM 32nd                  1
+  06-16-2026 7AM 32nd                  1
+  06-16-2026 32nd Late                 4
+  06-18-2026 7AM 32nd                  1
+  Total:                               32
+
+Marcus Daniels
+  06-01-2026 Gramercy weekday          4
+  06-03-2026 Gramercy weekday          4
+  06-04-2026 53rd St weekday           4
+  06-05-2026 Gramercy weekday          4
+  06-08-2026 Gramercy weekday          4
+  06-10-2026 Cancer Center weekday     3
+  06-15-2026 Gramercy weekday          4
+  Total:                               27
+
+Mark Hamilton
+  06-08-2026 7AM 32nd                  1
+  06-10-2026 Premier                   1
+  06-11-2026 7AM 32nd                  1
+  06-12-2026 32nd Late                 4
+  06-13-2026 32nd St weekend           8
+  06-25-2026 7AM 32nd                  1
+  Total:                               16
+
+Matthew Tracey
+  06-08-2026 7AM CBI                   1
+  06-20-2026 CBI weekend               8
+  Total:                               9
+
+Melissa Ling
+  06-01-2026 41st St late              2
+  06-02-2026 41st St late              2
+  06-03-2026 41st St late              2
+  06-05-2026 41st St late              2
+  Total:                               8
+
+Michael Lan
+  06-25-2026 53rd St weekday           4
+  Total:                               4
+
+Michelle Lee
+  06-24-2026 HCC weekday               2
+  06-29-2026 53rd St weekday           4
+  06-30-2026 53rd St weekday           4
+  Total:                               10
+
+Mira Yousef
+  06-01-2026 CBI                       4
+  06-03-2026 Cancer Center weekday     3
+  06-04-2026 Cancer Center weekday     3
+  06-07-2026 ECEP                      5
+  06-08-2026 CBI                       4
+  06-10-2026 53rd St weekday           4
+  06-18-2026 32nd Late                 4
+  06-20-2026 Cancer Center weekend     7.5
+  06-22-2026 Gramercy weekday          4
+  06-24-2026 Gramercy weekday          4
+  06-26-2026 Cancer Center weekday     3
+  06-29-2026 Cancer Center weekday     3
+  Total:                               48.5
+
+Miriam Stock
+  06-01-2026 ECEP                      6
+  06-10-2026 ECEP                      6
+  06-15-2026 ECEP                      6
+  Total:                               18
+
+Monica Vergara
+  06-03-2026 HCC weekday               2
+  06-22-2026 CBI                       4
+  06-25-2026 32nd Late                 4
+  06-27-2026 Bay Ridge                 8
+  Total:                               18
+
+Motaz Nashawaty
+  06-02-2026 Bay Ridge                 4
+  06-06-2026 Lake Success              8
+  06-23-2026 53rd St weekday           4
+  06-30-2026 Bay Ridge                 4
+  Total:                               20
+
+Nihal Patel
+  06-18-2026 Premier                   1
+  06-19-2026 32nd Late                 4
+  06-20-2026 32nd St weekend           8
+  Total:                               13
+
+Olivia Purcell
+  06-15-2026 Bay Ridge                 4
+  06-17-2026 41st St                   2
+  06-17-2026 41st St late              2
+  06-23-2026 Bay Ridge                 4
+  06-24-2026 Bay Ridge                 4
+  06-27-2026 Gramercy weekend          8
+  06-28-2026 53rd St weekday           4
+  06-29-2026 Gramercy weekday          4
+  Total:                               32
+
+Peter Kolyvas
+  06-02-2026 41st St                   2
+  06-16-2026 41st St                   2
+  06-18-2026 41st St                   2
+  06-23-2026 Cancer Center weekday     3
+  Total:                               9
+
+Peter Liaw
+  06-15-2026 Premier                   1
+  Total:                               1
+
+Ralph Navarro
+  06-04-2026 Gramercy weekday          4
+  06-05-2026 CBI                       4
+  06-09-2026 CBI                       4
+  06-11-2026 Gramercy weekday          4
+  06-12-2026 41st St                   2
+  06-13-2026 Cancer Center weekend     7.5
+  06-14-2026 32nd St weekend           8
+  06-15-2026 53rd St weekday           4
+  06-17-2026 ECEP                      6
+  06-18-2026 ECEP                      6
+  06-19-2026 Bay Ridge                 4
+  06-20-2026 Lake Success              8
+  06-21-2026 Garden City               8
+  Total:                               69.5
+
+Ryan Cummings
+  06-01-2026 7AM CBI                   1
+  06-04-2026 7AM CBI                   1
+  06-05-2026 7AM CBI                   1
+  06-12-2026 7AM CBI                   1
+  06-16-2026 7AM CBI                   1
+  06-16-2026 Premier                   1
+  06-19-2026 7AM CBI                   1
+  Total:                               7
+
+Samantha Platt
+  06-02-2026 CBI                       4
+  06-04-2026 Bay Ridge                 4
+  06-05-2026 53rd St weekday           4
+  06-19-2026 Gramercy weekday          4
+  06-22-2026 53rd St weekday           4
+  06-23-2026 32nd Late                 4
+  06-26-2026 53rd St weekday           4
+  06-27-2026 53rd St weekend           8
+  06-29-2026 CBI                       4
+  06-30-2026 ECEP                      6
+  Total:                               46
+
+Sanaz Ameli
+  06-01-2026 Premier                   1
+  06-27-2026 41st St weekend           8
+  06-29-2026 41st St late              2
+  06-30-2026 41st St late              2
+  Total:                               13
+
+Shailin Thomas
+  06-01-2026 41st St                   2
+  06-02-2026 Cancer Center weekday     3
+  06-03-2026 41st St                   2
+  06-15-2026 41st St                   2
+  06-22-2026 41st St                   2
+  06-24-2026 41st St                   2
+  06-29-2026 41st St                   2
+  06-30-2026 41st St                   2
+  06-30-2026 Cancer Center weekday     3
+  Total:                               20
+
+Shannon Sullivan
+  06-03-2026 32nd Late                 4
+  06-08-2026 Premier                   1
+  06-20-2026 41st St weekend           8
+  06-22-2026 41st St late              2
+  06-23-2026 41st St late              2
+  06-24-2026 41st St late              2
+  06-25-2026 41st St late              2
+  06-26-2026 41st St late              2
+  Total:                               23
+
+Shunn Theingi
+  06-02-2026 ECEP                      6
+  06-04-2026 CBI                       4
+  06-08-2026 41st St                   2
+  06-11-2026 41st St                   2
+  06-14-2026 41st St weekend           8
+  06-15-2026 Cancer Center weekday     3
+  06-16-2026 Bay Ridge                 4
+  06-19-2026 Cancer Center weekday     3
+  06-24-2026 ECEP                      6
+  06-29-2026 ECEP                      6
+  06-30-2026 Gramercy weekday          4
+  Total:                               48
+
+Vansh Jain
+  06-09-2026 32nd Late                 4
+  06-25-2026 41st St                   2
+  06-27-2026 Lake Success              8
+  Total:                               14
+
+Wan Fung Chui
+  06-18-2026 Gramercy weekday          4
+  Total:                               4
+
+Winston Winkler
+  06-01-2026 Bay Ridge                 4
+  06-03-2026 Bay Ridge                 4
+  06-05-2026 Cancer Center weekday     3
+  06-06-2026 Bay Ridge                 8
+  06-09-2026 ECEP                      6
+  06-10-2026 32nd Late                 4
+  06-11-2026 Cancer Center weekday     3
+  06-12-2026 ECEP                      6
+  06-13-2026 ECEP                      5
+  06-14-2026 CBI weekend               8
+  06-17-2026 Gramercy weekday          4
+  06-29-2026 Bay Ridge                 4
+  Total:                               59
+
+Yvan James
+  06-01-2026 Cancer Center weekday     3
+  06-08-2026 53rd St weekday           4
+  06-09-2026 Cancer Center weekday     3
+  06-11-2026 Bay Ridge                 4
+  06-13-2026 Bay Ridge                 8
+  06-19-2026 41st St                   2
+  06-20-2026 HCC weekend               8
+  06-26-2026 41st St                   2
+  06-28-2026 41st St weekend           8
+  Total:                               42

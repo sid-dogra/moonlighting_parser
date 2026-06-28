@@ -358,9 +358,6 @@ function buildAbbreviationMap(doc) {
         }
     }
 
-    // Debug: store count
-    window._abbrevDebug = { mapSize: Object.keys(abbrevMap).length };
-
     return abbrevMap;
 }
 
@@ -474,21 +471,7 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
     const results = [];
     const abbrevMap = buildAbbreviationMap(doc);
 
-    // Debug info
-    window._contrastDebug = {
-        abbrevMapSize: Object.keys(abbrevMap).length,
-        traineesSize: trainees.size,
-        fellowsSize: fellows.size,
-        tablesFound: 0,
-        tableWithDates: false,
-        headerRowIdx: -1,
-        dateColumnsCount: 0,
-        shiftsProcessed: 0,
-        peopleMatched: 0
-    };
-
     const tables = doc.querySelectorAll('table');
-    window._contrastDebug.tablesFound = tables.length;
 
     for (const table of tables) {
         const rows = table.querySelectorAll('tr');
@@ -512,13 +495,8 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
         if (dateColumns.length === 0 || headerRowIdx < 0) continue;
 
-        window._contrastDebug.tableWithDates = true;
-        window._contrastDebug.headerRowIdx = headerRowIdx;
-        window._contrastDebug.dateColumnsCount = dateColumns.length;
-
         // Parse dates
         const dates = dateColumns.map(d => parseDateHeader(d, year));
-        window._contrastDebug.validDates = dates.filter(d => d !== null).length;
 
         // Parse data rows
         for (let i = headerRowIdx + 1; i < rows.length; i++) {
@@ -548,7 +526,6 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
             if (!shiftInfo) continue;
 
-            window._contrastDebug.shiftsProcessed++;
             const [displayName, hours] = shiftInfo;
 
             // Day-of-week restrictions
@@ -586,12 +563,10 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
                 // Premier Fellow only for fellows
                 if (shiftName.includes('Premier') && !fellows.has(fullName)) continue;
 
-                window._contrastDebug.peopleMatched++;
                 results.push({ date: dates[colIdx], shift: displayName, person: fullName, hours });
             }
         }
 
-        console.log('Contrast results from this table:', results.length);
         break;  // Only process first matching table
     }
 
@@ -795,44 +770,17 @@ document.getElementById('parseBtn').addEventListener('click', function() {
 
         const allEntries = [];
 
-        let statusMsg = [];
-
         // Parse Residency Schedule
         if (residencyHtml) {
             const entries = parseResidencySchedule(residencyHtml.content, traineesData.all, year);
-            statusMsg.push(`Residency: ${entries.length} shifts`);
             allEntries.push(...entries);
-        } else {
-            statusMsg.push('Residency: not uploaded');
         }
 
         // Parse Contrast Schedule
         if (contrastHtml) {
             const entries = parseContrastSchedule(contrastHtml.content, traineesData.all, traineesData.fellows, year);
-            statusMsg.push(`Contrast: ${entries.length} shifts`);
             allEntries.push(...entries);
-        } else {
-            statusMsg.push('Contrast: not uploaded');
         }
-
-        // Show parsing status with debug info
-        let debugInfo = '';
-        if (window._contrastDebug) {
-            const d = window._contrastDebug;
-            debugInfo = `\n\nContrast Debug:\n` +
-                `- Abbrev map: ${d.abbrevMapSize}\n` +
-                `- Trainees: ${d.traineesSize}, Fellows: ${d.fellowsSize}\n` +
-                `- Tables: ${d.tablesFound}\n` +
-                `- Found table with dates: ${d.tableWithDates}\n` +
-                `- Header row: ${d.headerRowIdx}, Date cols: ${d.dateColumnsCount}\n` +
-                `- Valid dates: ${d.validDates || 0}\n` +
-                `- Shifts processed: ${d.shiftsProcessed}\n` +
-                `- People matched: ${d.peopleMatched}`;
-        }
-        if (window._abbrevDebug) {
-            debugInfo += `\n\nAbbrev map built: ${window._abbrevDebug.mapSize} entries`;
-        }
-        alert('Parsing complete:\n' + statusMsg.join('\n') + '\nTotal: ' + allEntries.length + ' shifts' + debugInfo);
 
         // Remove duplicates
         const seen = new Set();
