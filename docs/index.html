@@ -478,10 +478,22 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
     const results = [];
     const abbrevMap = buildAbbreviationMap(doc);
-    console.log('Abbreviation map size:', Object.keys(abbrevMap).length);
+
+    // Debug info
+    window._contrastDebug = {
+        abbrevMapSize: Object.keys(abbrevMap).length,
+        traineesSize: trainees.size,
+        fellowsSize: fellows.size,
+        tablesFound: 0,
+        tableWithDates: false,
+        headerRowIdx: -1,
+        dateColumnsCount: 0,
+        shiftsProcessed: 0,
+        peopleMatched: 0
+    };
 
     const tables = doc.querySelectorAll('table');
-    console.log('Tables found:', tables.length);
+    window._contrastDebug.tablesFound = tables.length;
 
     for (const table of tables) {
         const rows = table.querySelectorAll('tr');
@@ -505,12 +517,13 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
         if (dateColumns.length === 0 || headerRowIdx < 0) continue;
 
-        console.log('Found contrast table with', rows.length, 'rows, header at row', headerRowIdx);
-        console.log('Date columns sample:', dateColumns.slice(1, 5));
+        window._contrastDebug.tableWithDates = true;
+        window._contrastDebug.headerRowIdx = headerRowIdx;
+        window._contrastDebug.dateColumnsCount = dateColumns.length;
 
         // Parse dates
         const dates = dateColumns.map(d => parseDateHeader(d, year));
-        console.log('Valid dates parsed:', dates.filter(d => d !== null).length);
+        window._contrastDebug.validDates = dates.filter(d => d !== null).length;
 
         // Parse data rows
         for (let i = headerRowIdx + 1; i < rows.length; i++) {
@@ -540,6 +553,7 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
             if (!shiftInfo) continue;
 
+            window._contrastDebug.shiftsProcessed++;
             const [displayName, hours] = shiftInfo;
 
             // Day-of-week restrictions
@@ -577,6 +591,7 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
                 // Premier Fellow only for fellows
                 if (shiftName.includes('Premier') && !fellows.has(fullName)) continue;
 
+                window._contrastDebug.peopleMatched++;
                 results.push({ date: dates[colIdx], shift: displayName, person: fullName, hours });
             }
         }
@@ -805,8 +820,21 @@ document.getElementById('parseBtn').addEventListener('click', function() {
             statusMsg.push('Contrast: not uploaded');
         }
 
-        // Show parsing status
-        alert('Parsing complete:\\n' + statusMsg.join('\\n') + '\\nTotal: ' + allEntries.length + ' shifts');
+        // Show parsing status with debug info
+        let debugInfo = '';
+        if (window._contrastDebug) {
+            const d = window._contrastDebug;
+            debugInfo = `\n\nContrast Debug:\n` +
+                `- Abbrev map: ${d.abbrevMapSize}\n` +
+                `- Trainees: ${d.traineesSize}, Fellows: ${d.fellowsSize}\n` +
+                `- Tables: ${d.tablesFound}\n` +
+                `- Found table with dates: ${d.tableWithDates}\n` +
+                `- Header row: ${d.headerRowIdx}, Date cols: ${d.dateColumnsCount}\n` +
+                `- Valid dates: ${d.validDates || 0}\n` +
+                `- Shifts processed: ${d.shiftsProcessed}\n` +
+                `- People matched: ${d.peopleMatched}`;
+        }
+        alert('Parsing complete:\n' + statusMsg.join('\n') + '\nTotal: ' + allEntries.length + ' shifts' + debugInfo);
 
         // Remove duplicates
         const seen = new Set();
