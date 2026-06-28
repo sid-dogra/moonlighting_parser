@@ -318,62 +318,48 @@ function formatDate(date) {
 
 function buildAbbreviationMap(doc) {
     const abbrevMap = {};
-    const sampleCells = [];  // Debug: collect sample cells
+
+    // The HTML has names and abbreviations in ADJACENT cells:
+    // <td>Emmy Hu</td><td>EH</td>
+    // So we need to look at pairs of cells in each row
 
     const tables = doc.querySelectorAll('table');
     for (const table of tables) {
-        const cells = table.querySelectorAll('td, th');
-        for (const cell of cells) {
-            let cellText = cell.textContent.trim();
+        const rows = table.querySelectorAll('tr');
+        for (const row of rows) {
+            const cells = row.querySelectorAll('td, th');
 
-            if (cellText.length < 4) continue;
+            for (let i = 0; i < cells.length - 1; i++) {
+                const nameCell = cells[i].textContent.trim();
+                const abbrevCell = cells[i + 1].textContent.trim();
 
-            // Debug: collect first 10 cells that might be name+abbrev
-            if (sampleCells.length < 10 && cellText.length > 6 && cellText.length < 50) {
-                sampleCells.push(cellText.substring(0, 40));
-            }
+                // Skip if name cell is too short or too long
+                if (nameCell.length < 4 || nameCell.length > 40) continue;
 
-            // Strip phone numbers
-            cellText = cellText.replace(/\d{3}[-.]?\d{3}[-.]?\d{4}.*$/, '');
-            cellText = cellText.replace(/\d{3}-\d{3}-\d{4}.*$/, '');
+                // Skip if abbrev cell doesn't look like an abbreviation (2-4 chars, starts with uppercase)
+                if (abbrevCell.length < 2 || abbrevCell.length > 4) continue;
+                if (!/^[A-Z]/.test(abbrevCell)) continue;
 
-            // Pattern: name ending with lowercase, then abbreviation
-            let match = cellText.match(/^(.+?[a-z])\s*([A-Z][A-Za-z]?[a-z]?)$/);
-            if (match) {
-                const fullName = match[1].trim();
-                const abbrev = match[2];
-                if (abbrev.length >= 2 && fullName.length > 3 && (fullName.includes(' ') || fullName.includes(','))) {
-                    const normalized = normalizeName(fullName);
-                    if (normalized) abbrevMap[abbrev] = normalized;
-                }
-                continue;
-            }
+                // Check if name cell looks like a name (has space or comma)
+                if (!nameCell.includes(' ') && !nameCell.includes(',')) continue;
 
-            match = cellText.match(/^(.+[a-z])([A-Z]{2,4})$/);
-            if (match) {
-                const fullName = match[1].trim();
-                const abbrev = match[2];
-                if (fullName.length > 3 && (fullName.includes(' ') || fullName.includes(','))) {
-                    const normalized = normalizeName(fullName);
-                    if (normalized) abbrevMap[abbrev] = normalized;
-                }
-                continue;
-            }
+                // Skip if name has numbers (probably not a name)
+                if (/\d/.test(nameCell)) continue;
 
-            match = cellText.match(/^(.+[a-z])([A-Z][A-Za-z]{1,2})$/);
-            if (match) {
-                const fullName = match[1].trim();
-                const abbrev = match[2];
-                if (fullName.length > 3 && (fullName.includes(' ') || fullName.includes(','))) {
-                    const normalized = normalizeName(fullName);
-                    if (normalized) abbrevMap[abbrev] = normalized;
+                // Strip any trailing punctuation from abbrev
+                const abbrev = abbrevCell.replace(/[^A-Za-z]/g, '');
+                if (abbrev.length < 2) continue;
+
+                const normalized = normalizeName(nameCell);
+                if (normalized) {
+                    abbrevMap[abbrev] = normalized;
                 }
             }
         }
     }
 
-    // Debug: store sample cells
-    window._abbrevDebug = { sampleCells, totalCellsChecked: 0 };
+    // Debug: store count
+    window._abbrevDebug = { mapSize: Object.keys(abbrevMap).length };
 
     return abbrevMap;
 }
@@ -843,8 +829,8 @@ document.getElementById('parseBtn').addEventListener('click', function() {
                 `- Shifts processed: ${d.shiftsProcessed}\n` +
                 `- People matched: ${d.peopleMatched}`;
         }
-        if (window._abbrevDebug && window._abbrevDebug.sampleCells) {
-            debugInfo += `\n\nSample cells:\n${window._abbrevDebug.sampleCells.join('\n')}`;
+        if (window._abbrevDebug) {
+            debugInfo += `\n\nAbbrev map built: ${window._abbrevDebug.mapSize} entries`;
         }
         alert('Parsing complete:\n' + statusMsg.join('\n') + '\nTotal: ' + allEntries.length + ' shifts' + debugInfo);
 
