@@ -478,8 +478,10 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
     const results = [];
     const abbrevMap = buildAbbreviationMap(doc);
+    console.log('Abbreviation map size:', Object.keys(abbrevMap).length);
 
     const tables = doc.querySelectorAll('table');
+    console.log('Tables found:', tables.length);
 
     for (const table of tables) {
         const rows = table.querySelectorAll('tr');
@@ -503,8 +505,12 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
 
         if (dateColumns.length === 0 || headerRowIdx < 0) continue;
 
+        console.log('Found contrast table with', rows.length, 'rows, header at row', headerRowIdx);
+        console.log('Date columns sample:', dateColumns.slice(1, 5));
+
         // Parse dates
         const dates = dateColumns.map(d => parseDateHeader(d, year));
+        console.log('Valid dates parsed:', dates.filter(d => d !== null).length);
 
         // Parse data rows
         for (let i = headerRowIdx + 1; i < rows.length; i++) {
@@ -575,6 +581,7 @@ function parseContrastSchedule(htmlString, trainees, fellows, year = 2026) {
             }
         }
 
+        console.log('Contrast results from this table:', results.length);
         break;  // Only process first matching table
     }
 
@@ -786,7 +793,9 @@ document.getElementById('parseBtn').addEventListener('click', function() {
 
         // Parse Contrast Schedule
         if (contrastHtml) {
+            console.log('Parsing Contrast Schedule...');
             const entries = parseContrastSchedule(contrastHtml.content, traineesData.all, traineesData.fellows, year);
+            console.log('Contrast shifts found:', entries.length);
             allEntries.push(...entries);
         }
 
