@@ -318,6 +318,7 @@ function formatDate(date) {
 
 function buildAbbreviationMap(doc) {
     const abbrevMap = {};
+    const sampleCells = [];  // Debug: collect sample cells
 
     const tables = doc.querySelectorAll('table');
     for (const table of tables) {
@@ -326,6 +327,11 @@ function buildAbbreviationMap(doc) {
             let cellText = cell.textContent.trim();
 
             if (cellText.length < 4) continue;
+
+            // Debug: collect first 10 cells that might be name+abbrev
+            if (sampleCells.length < 10 && cellText.length > 6 && cellText.length < 50) {
+                sampleCells.push(cellText.substring(0, 40));
+            }
 
             // Strip phone numbers
             cellText = cellText.replace(/\d{3}[-.]?\d{3}[-.]?\d{4}.*$/, '');
@@ -365,6 +371,9 @@ function buildAbbreviationMap(doc) {
             }
         }
     }
+
+    // Debug: store sample cells
+    window._abbrevDebug = { sampleCells, totalCellsChecked: 0 };
 
     return abbrevMap;
 }
@@ -833,6 +842,9 @@ document.getElementById('parseBtn').addEventListener('click', function() {
                 `- Valid dates: ${d.validDates || 0}\n` +
                 `- Shifts processed: ${d.shiftsProcessed}\n` +
                 `- People matched: ${d.peopleMatched}`;
+        }
+        if (window._abbrevDebug && window._abbrevDebug.sampleCells) {
+            debugInfo += `\n\nSample cells:\n${window._abbrevDebug.sampleCells.join('\n')}`;
         }
         alert('Parsing complete:\n' + statusMsg.join('\n') + '\nTotal: ' + allEntries.length + ' shifts' + debugInfo);
 
