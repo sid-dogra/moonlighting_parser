@@ -385,9 +385,8 @@ function parseResidencySchedule(htmlString, trainees, year = 2026) {
     const results = [];
     const tables = doc.querySelectorAll('table');
 
-    let bestTable = null;
-    let bestDataRows = 0;
-    let bestShiftColumns = [];
+    // Collect all candidate tables (matching Python logic exactly)
+    const candidates = [];
 
     for (const table of tables) {
         const rows = table.querySelectorAll('tr');
@@ -411,12 +410,30 @@ function parseResidencySchedule(htmlString, trainees, year = 2026) {
             }
         }
 
-        if (dataRowCount > bestDataRows) {
-            bestDataRows = dataRowCount;
-            bestTable = rows;
-            bestShiftColumns = firstTexts;
-        }
+        // Check if first column header is clean (matches Python logic)
+        const firstHeader = firstTexts[0] || '';
+        const isClean = firstHeader === '' || firstHeader.startsWith('ECEP');
+
+        candidates.push({
+            dataRowCount,
+            isClean: isClean ? 1 : 0,
+            rowCount: rows.length,
+            rows,
+            shiftColumns: firstTexts
+        });
     }
+
+    // Sort by: most data rows, then clean headers, then fewest total rows (Python logic)
+    candidates.sort((a, b) => {
+        if (b.dataRowCount !== a.dataRowCount) return b.dataRowCount - a.dataRowCount;
+        if (b.isClean !== a.isClean) return b.isClean - a.isClean;
+        return a.rowCount - b.rowCount;
+    });
+
+    if (candidates.length === 0) return results;
+
+    const bestTable = candidates[0].rows;
+    const bestShiftColumns = candidates[0].shiftColumns;
 
     if (!bestTable) return results;
 
