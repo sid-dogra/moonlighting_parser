@@ -785,19 +785,28 @@ document.getElementById('parseBtn').addEventListener('click', function() {
 
         const allEntries = [];
 
+        let statusMsg = [];
+
         // Parse Residency Schedule
         if (residencyHtml) {
             const entries = parseResidencySchedule(residencyHtml.content, traineesData.all, year);
+            statusMsg.push(`Residency: ${entries.length} shifts`);
             allEntries.push(...entries);
+        } else {
+            statusMsg.push('Residency: not uploaded');
         }
 
         // Parse Contrast Schedule
         if (contrastHtml) {
-            console.log('Parsing Contrast Schedule...');
             const entries = parseContrastSchedule(contrastHtml.content, traineesData.all, traineesData.fellows, year);
-            console.log('Contrast shifts found:', entries.length);
+            statusMsg.push(`Contrast: ${entries.length} shifts`);
             allEntries.push(...entries);
+        } else {
+            statusMsg.push('Contrast: not uploaded');
         }
+
+        // Show parsing status
+        alert('Parsing complete:\\n' + statusMsg.join('\\n') + '\\nTotal: ' + allEntries.length + ' shifts');
 
         // Remove duplicates
         const seen = new Set();
